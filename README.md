@@ -59,6 +59,10 @@ The application features a clean, modern interface with a dark theme, responsive
 </p>
 
 <p align="center">
+  <img src="public/homepag.png" alt="GitHub QR Generator Homepage" width="90%"/>
+</p>
+
+<p align="center">
   <em>GitHub QR Code Generator – Homepage Preview</em>
 </p>
 
