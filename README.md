@@ -244,7 +244,7 @@ The project can be extended with additional features:
 <p align="center">
   <strong>Eliyas Kindie Lulie</strong>
   <br/>
-  Software Engineering Student | Full-Stack Developer
+  Software Engineering | Full-Stack Developer
 </p>
 
 <p align="center">
