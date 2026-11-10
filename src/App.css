@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #080d18;
+  color: #f8fafc;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 75px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #202b3d;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.github-icon {
+  background: #ffffff;
+  color: #080d18;
+  padding: 9px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.navbar a,
+footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 25px 30px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tag {
+  display: inline-block;
+  color: #60a5fa;
+  background: #172b49;
+  border: 1px solid #24466e;
+  border-radius: 30px;
+  padding: 9px 17px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 58px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  display: block;
+  color: #60a5fa;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 20px auto;
+  color: #9caec4;
+  line-height: 1.8;
+}
+
+.generator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #111b2b;
+  border: 1px solid #26354a;
+  padding: 40px;
+  border-radius: 22px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #34445c;
+  background: #080d18;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-section input:focus {
+  border-color: #60a5fa;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.generate-btn:hover,
+.download-btn:hover {
+  background: #1d4ed8;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 55px;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  background: #2563eb;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-info h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.profile-info a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.qr-section {
+  text-align: center;
+}
+
+.qr-section h2 {
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+
+.qr-wrapper {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.qr-wrapper canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.scan-text {
+  margin: 18px 0;
+  color: #9caec4;
+  font-size: 14px;
+}
+
+.qr-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.qr-actions button {
+  padding: 13px 20px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.download-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+.copy-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid #53647a;
+}
+
+.copy-btn:hover {
+  background: #25344a;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.features div {
+  padding: 25px;
+  border: 1px solid #26354a;
+  border-radius: 15px;
+  background: #111b2b;
+}
+
+.features span {
+  color: #60a5fa;
+  font-weight: bold;
+}
+
+.features h3 {
+  margin: 15px 0 8px;
+}
+
+.features p {
+  color: #9caec4;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 70px;
+  padding: 25px 0;
+  border-top: 1px solid #26354a;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #9caec4;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .container {
+    padding: 45px 16px 20px;
+  }
+
+  .generator {
+    grid-template-columns: 1fr;
+    padding: 25px 18px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-info {
+    margin-top: 35px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
